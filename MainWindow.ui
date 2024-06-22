@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1777</width>
+    <height>1047</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>1500</width>
+      <height>841</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1500</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#frame_2{
+	background-color: rgb(185, 183, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>671</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#label{
+	font: 50pt &quot;宋体&quot;;
+	color: rgb(70, 0, 1);
+}</string>
+        </property>
+        <property name="text">
+         <string>学生管理系统</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>8</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#frame_3{
+background-color: rgb(207, 254, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>2</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#frame_4{
+	border-bottom-left-radius:20px;
+}
+QFrame{
+	font: 100pt &quot;宋体&quot;;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QPushButton" name="mainpage">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+             </property>
+             <property name="text">
+              <string>首页</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="find">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+             </property>
+             <property name="text">
+              <string>学生查询</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="regis">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+             </property>
+             <property name="text">
+              <string>学生注册</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="course">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+             </property>
+             <property name="text">
+              <string>记录成绩</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="find_course">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+             </property>
+             <property name="text">
+              <string>记录奖项</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>9</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QStackedWidget" name="Mainstacked">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 255, 221);</string>
+             </property>
+             <property name="currentIndex">
+              <number>2</number>
+             </property>
+             <widget class="QWidget" name="page">
+              <widget class="QLabel" name="label_2">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>210</y>
+                 <width>991</width>
+                 <height>111</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 60pt &quot;楷体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>欢迎使用学生管理系统</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_3">
+               <property name="geometry">
+                <rect>
+                 <x>340</x>
+                 <y>430</y>
+                 <width>571</width>
+                 <height>91</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Algerian&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Welcome to use Student Manager System</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="page_5">
+              <widget class="QLineEdit" name="find_input_sid">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>70</y>
+                 <width>451</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;
+font: 25pt &quot;宋体&quot;;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>学号:</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="find_archive">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>340</y>
+                 <width>431</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>查询档案</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="get_gpa">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>440</y>
+                 <width>431</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>GPA计算</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="find_award">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>540</y>
+                 <width>431</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>获奖信息</string>
+               </property>
+              </widget>
+              <widget class="QTextEdit" name="textEdit">
+               <property name="geometry">
+                <rect>
+                 <x>530</x>
+                 <y>90</y>
+                 <width>661</width>
+                 <height>621</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="find_archive_r">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>630</y>
+                 <width>431</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>替换档案</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="find_input_archive">
+               <property name="geometry">
+                <rect>
+                 <x>42</x>
+                 <y>190</y>
+                 <width>451</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;
+font: 25pt &quot;宋体&quot;;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>档案:</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="page_4">
+              <property name="styleSheet">
+               <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+              </property>
+              <widget class="QPushButton" name="reg_reg">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>480</y>
+                 <width>531</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>注册</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="reg_input_sid">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>100</y>
+                 <width>531</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>学号:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="reg_input_cid">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>200</y>
+                 <width>531</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>班级:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="reg_input_major">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>300</y>
+                 <width>531</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>专业:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="reg_input_archive">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>389</y>
+                 <width>531</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>档案:</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="reg_label">
+               <property name="geometry">
+                <rect>
+                 <x>210</x>
+                 <y>630</y>
+                 <width>741</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="reg_change">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>550</y>
+                 <width>531</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>更改专业</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="page_3">
+              <property name="styleSheet">
+               <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+              </property>
+              <widget class="QPushButton" name="write_upload">
+               <property name="geometry">
+                <rect>
+                 <x>330</x>
+                 <y>520</y>
+                 <width>241</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>上传成绩</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="write_sid">
+               <property name="geometry">
+                <rect>
+                 <x>330</x>
+                 <y>160</y>
+                 <width>521</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>学号:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="write_cid">
+               <property name="geometry">
+                <rect>
+                 <x>330</x>
+                 <y>250</y>
+                 <width>521</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>课程:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="write_grade">
+               <property name="geometry">
+                <rect>
+                 <x>330</x>
+                 <y>340</y>
+                 <width>521</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>成绩:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="write_term">
+               <property name="geometry">
+                <rect>
+                 <x>330</x>
+                 <y>420</y>
+                 <width>521</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>学期:</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="write_delete">
+               <property name="geometry">
+                <rect>
+                 <x>600</x>
+                 <y>520</y>
+                 <width>251</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>删除成绩</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="record_label">
+               <property name="geometry">
+                <rect>
+                 <x>270</x>
+                 <y>580</y>
+                 <width>641</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="page_2">
+              <property name="styleSheet">
+               <string notr="true">font: 25pt &quot;宋体&quot;;</string>
+              </property>
+              <widget class="QPushButton" name="reward_insert">
+               <property name="geometry">
+                <rect>
+                 <x>310</x>
+                 <y>480</y>
+                 <width>541</width>
+                 <height>81</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>插入获奖记录</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="reward_name">
+               <property name="geometry">
+                <rect>
+                 <x>310</x>
+                 <y>190</y>
+                 <width>541</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>奖项:</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="reward_sid">
+               <property name="geometry">
+                <rect>
+                 <x>310</x>
+                 <y>330</y>
+                 <width>541</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(255, 255, 255, 200);
+border:none;
+border-bottom:1px solid black;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="placeholderText">
+                <string>学号:</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
